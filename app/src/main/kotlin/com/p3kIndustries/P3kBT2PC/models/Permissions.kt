@@ -1,4 +1,4 @@
-package com.p3kIndustries.p3kps4bt2pc.models
+package com.p3kIndustries.P3kBT2PC.models
 
 import android.Manifest
 import android.app.Activity
@@ -7,7 +7,7 @@ import android.content.pm.PackageManager
 import android.os.Build
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.p3kIndustries.p3kps4bt2pc.services.Logger
+import com.p3kIndustries.P3kBT2PC.services.Logger
 
 // Logic for prompting user to give access to required permissions
 class Permissions(private val activity: Activity, private val logger: Logger) {

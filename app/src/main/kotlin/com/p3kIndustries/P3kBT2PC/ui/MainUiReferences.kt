@@ -1,12 +1,12 @@
-package com.p3kIndustries.p3kps4bt2pc.ui
+package com.p3kIndustries.P3kBT2PC.ui
 
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ScrollView
 import android.widget.TextView
-import com.p3kIndustries.p3kps4bt2pc.MainActivity
-import com.p3kIndustries.p3kps4bt2pc.R
+import com.p3kIndustries.P3kBT2PC.MainActivity
+import com.p3kIndustries.P3kBT2PC.R
 
 class MainUiReferences()
 {

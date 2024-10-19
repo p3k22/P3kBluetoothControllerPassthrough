@@ -1,9 +1,9 @@
-package com.p3kIndustries.p3kps4bt2pc.services
+package com.p3kIndustries.P3kBT2PC.services
 
 import android.os.Handler
 import android.os.Looper
 import android.view.View
-import com.p3kIndustries.p3kps4bt2pc.ui.MainUiReferences
+import com.p3kIndustries.P3kBT2PC.ui.MainUiReferences
 import java.util.concurrent.LinkedBlockingDeque
 
 class Logger(private var ui: MainUiReferences)

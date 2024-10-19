@@ -1,4 +1,4 @@
-package com.p3kIndustries.p3kps4bt2pc.services
+package com.p3kIndustries.P3kBT2PC.services
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

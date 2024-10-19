@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.p3kIndustries.p3kps4bt2pc"
+    package="com.p3kIndustries.P3kBT2PC"
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -30,7 +30,7 @@
         android:theme="@style/Theme.P3kPS4BT2PC"
         tools:targetApi="31">
         <activity
-            android:name="com.p3kIndustries.p3kps4bt2pc.MainActivity"
+            android:name="com.p3kIndustries.P3kBT2PC.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.P3kPS4BT2PC">
             <intent-filter>

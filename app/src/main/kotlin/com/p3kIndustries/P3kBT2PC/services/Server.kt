@@ -1,9 +1,9 @@
-package com.p3kIndustries.p3kps4bt2pc.services
+package com.p3kIndustries.P3kBT2PC.services
 
-import com.p3kIndustries.p3kps4bt2pc.R
-import com.p3kIndustries.p3kps4bt2pc.events.Device
-import com.p3kIndustries.p3kps4bt2pc.ui.MainUiReferences
-import com.p3kIndustries.p3kps4bt2pc.models.Input
+import com.p3kIndustries.P3kBT2PC.R
+import com.p3kIndustries.P3kBT2PC.events.Device
+import com.p3kIndustries.P3kBT2PC.ui.MainUiReferences
+import com.p3kIndustries.P3kBT2PC.models.Input
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

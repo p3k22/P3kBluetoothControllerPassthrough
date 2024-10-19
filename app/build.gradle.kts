@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.p3kIndustries.p3kps4bt2pc"
+    namespace = "com.p3kIndustries.P3kBT2PC"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.p3kIndustries.p3kps4bt2pc"
+        applicationId = "com.p3kIndustries.P3kBT2PC"
         minSdk = 28
         targetSdk = 34
         versionCode = 1

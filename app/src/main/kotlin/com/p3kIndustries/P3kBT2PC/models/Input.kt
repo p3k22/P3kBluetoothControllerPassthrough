@@ -1,4 +1,4 @@
-package com.p3kIndustries.p3kps4bt2pc.models
+package com.p3kIndustries.P3kBT2PC.models
 
 import kotlinx.serialization.Serializable
 

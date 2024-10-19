@@ -1,10 +1,10 @@
-package com.p3kIndustries.p3kps4bt2pc.events
+package com.p3kIndustries.P3kBT2PC.events
 
 import android.view.InputDevice
 import android.view.KeyEvent
 import android.view.MotionEvent
-import com.p3kIndustries.p3kps4bt2pc.models.Input
-import com.p3kIndustries.p3kps4bt2pc.services.Logger
+import com.p3kIndustries.P3kBT2PC.models.Input
+import com.p3kIndustries.P3kBT2PC.services.Logger
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 

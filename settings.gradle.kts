@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "P3kPS4BT2PC"
+rootProject.name = "P3kBT2PC"
 include(":app")

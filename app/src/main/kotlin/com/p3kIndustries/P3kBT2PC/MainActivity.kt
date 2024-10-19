@@ -1,15 +1,15 @@
-package com.p3kIndustries.p3kps4bt2pc
+package com.p3kIndustries.P3kBT2PC
 
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.MotionEvent
 import androidx.appcompat.app.AppCompatActivity
-import com.p3kIndustries.p3kps4bt2pc.ui.MainUiReferences
-import com.p3kIndustries.p3kps4bt2pc.events.Device
-import com.p3kIndustries.p3kps4bt2pc.services.Server
-import com.p3kIndustries.p3kps4bt2pc.models.Permissions
-import com.p3kIndustries.p3kps4bt2pc.services.Logger
-import com.p3kIndustries.p3kps4bt2pc.services.Udp
+import com.p3kIndustries.P3kBT2PC.ui.MainUiReferences
+import com.p3kIndustries.P3kBT2PC.events.Device
+import com.p3kIndustries.P3kBT2PC.services.Server
+import com.p3kIndustries.P3kBT2PC.models.Permissions
+import com.p3kIndustries.P3kBT2PC.services.Logger
+import com.p3kIndustries.P3kBT2PC.services.Udp
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
