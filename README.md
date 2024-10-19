@@ -1,4 +1,4 @@
-# P3kBluetoothControllerPassthrough
+# Android Bluetooth Controller To PC
 
 A way to use your phone as a bluetooth receiver for your pc via your local network, so that you can forward controller inputs from your phone to pc.
 
