@@ -102,8 +102,11 @@ class MainActivity : AppCompatActivity()
                         return@launch
                     }
 
-                    delay(100)
-                    logger.addLog("Searching...")
+                    delay(500)
+                    if(!findClientJob!!.isCompleted)
+                    {
+                        logger.addLog("Searching...")
+                    }
 
                 }
                 mainUiReferences.autoDetectButton.text= "Connect To Client"
