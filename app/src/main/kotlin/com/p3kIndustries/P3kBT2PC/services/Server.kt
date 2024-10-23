@@ -115,7 +115,7 @@ class Server(
                     1 ->
                     {
                         ui.statusTextView.text = "Status: Connected"
-                        ui.connectButton.text = "Disconnect"
+                        //ui.connectButton.text = "Disconnect"
                         ui.statusDot.setBackgroundResource(R.drawable.greencircle)
                         ui.autoDetectButton.isEnabled = false
                     }
@@ -142,7 +142,7 @@ class Server(
         isSendingData = false
 
         ui.statusTextView.text = "Status: Disconnected"
-        ui.connectButton.text = "Connect"
+       // ui.connectButton.text = "Connect"
         ui.statusDot.setBackgroundResource(R.drawable.redcircle)
         ui.autoDetectButton.isEnabled = true
 

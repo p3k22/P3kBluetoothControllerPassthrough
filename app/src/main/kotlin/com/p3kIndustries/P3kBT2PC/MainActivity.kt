@@ -82,9 +82,9 @@ class MainActivity : AppCompatActivity()
 
             findClientJob = coroutineScope.launch {
                 isAutoSearching=true
-                mainUiReferences.autoDetectButton.text= "Cancel Search..."
+                mainUiReferences.autoDetectButton.text= "Cancel..."
                 mainUiReferences.ipEditText.isEnabled= false
-                mainUiReferences.connectButton.isEnabled= false
+                //mainUiReferences.connectButton.isEnabled= false
                 udp.findService()
             }
             coroutineScope.launch {
@@ -93,10 +93,10 @@ class MainActivity : AppCompatActivity()
                     if(findClientJob!!.isCancelled)
                     {
 
-                        mainUiReferences.autoDetectButton.text= "Auto Detect"
+                        mainUiReferences.autoDetectButton.text= "Connect To Client"
                         isAutoSearching=false
                         mainUiReferences.ipEditText.isEnabled= true
-                        mainUiReferences.connectButton.isEnabled= true
+                        //mainUiReferences.connectButton.isEnabled= true
                         udp.closeConnection()
                         logger.addLog("Cancelled search")
                         return@launch
@@ -106,10 +106,10 @@ class MainActivity : AppCompatActivity()
                     logger.addLog("Searching...")
 
                 }
-                mainUiReferences.autoDetectButton.text= "Auto Detect"
+                mainUiReferences.autoDetectButton.text= "Connect To Client"
                 isAutoSearching=false
                 mainUiReferences.ipEditText.isEnabled= true
-                mainUiReferences.connectButton.isEnabled= true
+               // mainUiReferences.connectButton.isEnabled= true
                 udp.closeConnection()
                 server.startSendingData(udp.foundIpAddress,coroutineScope)
             }
@@ -117,16 +117,16 @@ class MainActivity : AppCompatActivity()
         }
 
         // Set connect button OnClick listener
-        mainUiReferences.connectButton.setOnClickListener {
-            if (!server.isSendingData)
-            {
-                server.startSendingData(mainUiReferences.ipEditText.text.toString(),coroutineScope)
-            }
-            else
-            {
-                server.stopSendingData(coroutineScope)
-            }
-        }
+//        mainUiReferences.connectButton.setOnClickListener {
+//            if (!server.isSendingData)
+//            {
+//                server.startSendingData(mainUiReferences.ipEditText.text.toString(),coroutineScope)
+//            }
+//            else
+//            {
+//                server.stopSendingData(coroutineScope)
+//            }
+//        }
     }
 
     override fun onDestroy()

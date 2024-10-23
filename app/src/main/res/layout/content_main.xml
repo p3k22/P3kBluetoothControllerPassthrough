@@ -77,15 +77,16 @@
         android:id="@+id/autoDetectButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Auto Detect" />
+        android:text="Connect To Client" />
 
     <!-- Connect Button -->
-    <Button
+   <!-- <Button
         android:id="@+id/connectButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Connect"
         android:layout_marginTop="8dp" />
+     -->
 
     <!-- ScrollView to wrap logsTextView -->
     <TextView

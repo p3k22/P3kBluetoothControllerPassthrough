@@ -15,7 +15,7 @@ class MainUiReferences()
     lateinit var logScrollView: ScrollView
     lateinit var ipEditText: EditText
     lateinit var portEditText: EditText
-    lateinit var connectButton: Button
+    //lateinit var connectButton: Button
     lateinit var autoDetectButton: Button
     lateinit var statusDot: View
 
@@ -27,7 +27,7 @@ class MainUiReferences()
         logScrollView = mainActivity.findViewById(R.id.logScrollView)
         ipEditText = mainActivity.findViewById(R.id.ipEditText)
         portEditText = mainActivity.findViewById(R.id.portEditText)
-        connectButton = mainActivity.findViewById(R.id.connectButton)
+        //connectButton = mainActivity.findViewById(R.id.connectButton)
         autoDetectButton = mainActivity.findViewById(R.id.autoDetectButton)
     }
 }
