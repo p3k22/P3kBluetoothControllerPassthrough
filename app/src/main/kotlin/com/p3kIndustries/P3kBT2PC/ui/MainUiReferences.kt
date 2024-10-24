@@ -26,6 +26,7 @@ class MainUiReferences()
         statusDot = mainActivity.findViewById(R.id.statusDot)
         logScrollView = mainActivity.findViewById(R.id.logScrollView)
         ipEditText = mainActivity.findViewById(R.id.ipEditText)
+        ipEditText.isEnabled=false
         portEditText = mainActivity.findViewById(R.id.portEditText)
         //connectButton = mainActivity.findViewById(R.id.connectButton)
         autoDetectButton = mainActivity.findViewById(R.id.autoDetectButton)

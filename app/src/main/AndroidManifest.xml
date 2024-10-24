@@ -32,6 +32,7 @@
         <activity
             android:name="com.p3kIndustries.P3kBT2PC.MainActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.P3kPS4BT2PC">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

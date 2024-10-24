@@ -78,12 +78,17 @@ class MainActivity : AppCompatActivity()
                 findClientJob!!.cancel()
 
                 return@setOnClickListener
+            }else  if(server.isSendingData)
+            {
+                server.stopSendingData(coroutineScope)
+                mainUiReferences.autoDetectButton.text= "Connect To Client"
+                return@setOnClickListener
             }
 
             findClientJob = coroutineScope.launch {
                 isAutoSearching=true
                 mainUiReferences.autoDetectButton.text= "Cancel..."
-                mainUiReferences.ipEditText.isEnabled= false
+                //mainUiReferences.ipEditText.isEnabled= false
                 //mainUiReferences.connectButton.isEnabled= false
                 udp.findService()
             }
@@ -95,7 +100,7 @@ class MainActivity : AppCompatActivity()
 
                         mainUiReferences.autoDetectButton.text= "Connect To Client"
                         isAutoSearching=false
-                        mainUiReferences.ipEditText.isEnabled= true
+                       // mainUiReferences.ipEditText.isEnabled= true
                         //mainUiReferences.connectButton.isEnabled= true
                         udp.closeConnection()
                         logger.addLog("Cancelled search")
@@ -109,9 +114,9 @@ class MainActivity : AppCompatActivity()
                     }
 
                 }
-                mainUiReferences.autoDetectButton.text= "Connect To Client"
+                mainUiReferences.autoDetectButton.text= "Disconnect"
                 isAutoSearching=false
-                mainUiReferences.ipEditText.isEnabled= true
+                //mainUiReferences.ipEditText.isEnabled= true
                // mainUiReferences.connectButton.isEnabled= true
                 udp.closeConnection()
                 server.startSendingData(udp.foundIpAddress,coroutineScope)
